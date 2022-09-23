@@ -29,7 +29,7 @@ const Home = ({pageInfo, experiences, projects, skills, socials}: Props) => {
     return (
         <div className="bg-[rgb(36,36,36)] text-white h-screen snap snap-y snap-mandatory overflow-y-scroll oveflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
             <Head>
-                <title>{`${pageInfo?.name.slice(0,6)}'`} Portofolio</title>
+                <title>{`${pageInfo?.name?.slice(0,6)}'`} Portofolio</title>
             </Head>
 
             {/* Header */}
@@ -65,13 +65,13 @@ const Home = ({pageInfo, experiences, projects, skills, socials}: Props) => {
                 <ContactMe />
             </section>
 
-            <Link href="#hero">
+            {/* <Link href="#hero">
                 <footer className="sticky bottom-5 w-full cursor-pointer">
                     <div className="flex items-center justify-center">
                         <img src="https://i.imgur.com/HnTFijX.png" alt="arcuid"  className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer object-cover object-top" />
                     </div>
                 </footer>
-            </Link>
+            </Link> */}
         </div>
     );
 };
